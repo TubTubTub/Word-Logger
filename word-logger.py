@@ -369,7 +369,7 @@ class InputWindow(QWidget):
         self.setWindowFlags(Qt.WindowType.FramelessWindowHint)
         self.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
         self.setWindowTitle(' ')
-        self.setContentsMargins(0, 0, 0, 0)/
+        self.setContentsMargins(0, 0, 0, 0)
 
         self.input = QLineEdit(parent=self)
         self.input.setProperty('class', 'transparent-styling')
