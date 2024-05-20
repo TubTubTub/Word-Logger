@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'DM Mono';
+    src: url('assets/DM_Mono/DMMono-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DM Mono';
+    src: url('assets/DM_Mono/DMMono-Medium.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.transparent-styling {
+    background-color: transparent;
+    border: 1px solid --dm-border;
+    border-radius: 5px;
+    color: --dm-text;
+    font-family: 'DM Mono';
+    font-weight: bold;
+}
+
+.no-border-styling {
+    background-color: transparent;
+    border: none;
+    color: --dm-text;
+    font-family: 'DM Mono';
+    font-weight: bold;
+}
+
+.label {
+    background-color: transparent;
+    border-radius: 5px;
+    color: --dm-text;
+    font-family: 'DM Mono';
+    font-weight: bold;
+    text-align: center;
+}
+
+.input-container{
+    background: --dm-button-default;
+    border: 1px solid --dm-border;
+    border-radius: 5px;
+}
+
+.text-edit {
+    background-color: transparent;
+    border: 1px solid --dm-border;
+    border-radius: 5px;
+    color: --dm-text;
+    font-family: 'DM Mono';
+    font-weight: bold;
+}
+
+QPushButton {
+    background-color: --dm-button-default;
+    border: 1px solid --dm-border;
+    border-radius: 5px;
+    color: --dm-text;
+    font-family: 'DM Mono';
+    font-weight: bold;
+    text-align: center;
+}
+
+QPushButton:hover {
+    background-color: --dm-button-hover;
+}
+
+QPushButton:pressed {
+    background-color: --dm-button-pressed;
+}
+
+QScrollBar:vertical {
+    border: none;
+    background-color: transparent;
+    width: 14px;    
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle {
+    background: --dm-button-default;
+    border: 1px solid --dm-border;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical {
+    height: 0px;
+    subcontrol-position: bottom;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical {
+    height: 0px;
+    subcontrol-position: top;
+    subcontrol-position: margin;
+}
+
+QScrollBar::sub-page:vertical, QScrollBar::add-page:vertical {
+    background: none;
+}
