@@ -1,6 +1,11 @@
 import json
 import requests
 import os
+from dotenv import find_dotenv, load_dotenv
+
+env_path = find_dotenv()
+load_dotenv(env_path)
+API_KEY = os.getenv("API_KEY")
 basedir = os.path.dirname(__file__)
 
 class Dict():
@@ -14,7 +19,7 @@ class Dict():
             raise SystemExit
         else:
             try:
-                response = requests.get(f'https://www.dictionaryapi.com/api/v3/references/collegiate/json/{entry}?key=eb9c4d01-f573-4294-8f0a-b96eb7765b6f')
+                response = requests.get(f'https://www.dictionaryapi.com/api/v3/references/collegiate/json/{entry}?key={API_KEY}')
             except Exception as e:
                 print('Request failed!', e)
             

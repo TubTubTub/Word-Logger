@@ -27,8 +27,6 @@ replace_dictionary = {
 }
 theme = ''
 basedir = os.path.dirname(__file__)
-API_KEY = os.environ["api_key"]
-print(API_KEY)
 
 try:
     from ctypes import windll
