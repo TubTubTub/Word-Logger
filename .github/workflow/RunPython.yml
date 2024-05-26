@@ -1,0 +1,6 @@
+name: Setup Secret
+
+on: workflow_dispatch
+
+env:
+  api_key: ${{secrets.DICTIONARY_API_KEY}}
